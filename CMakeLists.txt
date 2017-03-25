@@ -20,7 +20,6 @@ ADD_CUSTOM_TARGET (uninstall "${CMAKE_COMMAND}" -P
     "${PROJECT_BINARY_DIR}/uninstall_target.cmake")
 
 #option(BUILD_EXAMPLES "Build and install examples" OFF)
-option(BUILD_DOCUMENTATION "Build the documentation" ON)
 #option(BUILD_TESTS "Build the tests" OFF)
 #option(BUILD_TOOLS "Build the tools" OFF)
 option(BUILD_IDL "Build and install idl" ON)
@@ -62,9 +61,6 @@ endif(${OpenRTM_FOUND})
 
 # Subdirectories
 add_subdirectory(cmake)
-if(BUILD_DOCUMENTATION)
-    add_subdirectory(doc)
-endif(BUILD_DOCUMENTATION)
 
 #if(BUILD_EXAMPLES)
 #    add_subdirectory(examples)
@@ -108,5 +104,3 @@ configure_file("${PROJECT_SOURCE_DIR}/cmake/cpack_options.cmake.in"
 set(CPACK_PROJECT_CONFIG_FILE ${cpack_options})
 include(${CPACK_PROJECT_CONFIG_FILE})
 include(CPack)
-
-
