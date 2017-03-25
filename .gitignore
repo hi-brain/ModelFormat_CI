@@ -1,0 +1,12 @@
+# gitignore for rtm components
+
+*.cmake
+!FindOpenRTM.cmake
+*.pc
+doxyfile
+CMakeCache.txt
+Makefile
+CMakeFiles/
+*.so
+src/*Comp
+*.log
