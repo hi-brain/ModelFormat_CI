@@ -11,3 +11,4 @@ CMakeFiles/
 *.so
 src/*Comp
 *.log
+RTC.xml*
