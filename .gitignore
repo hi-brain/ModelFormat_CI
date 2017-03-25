@@ -2,6 +2,7 @@
 
 *.cmake
 !FindOpenRTM.cmake
+!utils.cmake
 *.pc
 doxyfile
 CMakeCache.txt
